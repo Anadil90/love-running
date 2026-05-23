@@ -1,0 +1,18 @@
+/*wildcard selector to override default styles set by the browser*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*apply full height and width to elements, including the border*/ 
+}
+
+header {
+    background-color: slategray;
+}
+
+main {
+    background-color: steelblue;
+}
+
+footer {
+    background-color:bisque;
+}
