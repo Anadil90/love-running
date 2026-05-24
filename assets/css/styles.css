@@ -66,6 +66,8 @@ nav {/*navbar styles with dropdown menu*/
     display: none; /*hide display untill user clicks on the hamburger button*/
 }
 
+
+
 #nav-toggle:checked ~ nav { /*target sibling of checkbox and trigger block display when button is checked*/
     display: block;
 }
@@ -89,8 +91,18 @@ main {
     margin-top: 47px;/*offset margin to the top relative to header height*/
 }
 
-footer {
-    background-color:bisque;
+#social-media {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#social-media svg{
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /*media query*/
