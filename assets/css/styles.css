@@ -115,4 +115,14 @@ footer {
     .nav-toggle-label {
         display: none; /*hide toggler*/
     }
+
+    #logo {
+        font-size: 200%; /*enlarge by twice to fill up vertical space in the header*/
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        margin-top: 75px;/*offset extra space taken by header to push main element down*/
+    }
 }
