@@ -18,7 +18,12 @@ body {
     font-family: "lato", sans-serif;
 }
 
-
+h1, h2, h3 {/*apply styling to heading group*/
+    font-family: "oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252524;
+}
 
 header {
     background-color: slategray;
@@ -38,12 +43,7 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: "oswald", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252524;
-}
+
 
 #menu {
     letter-spacing: 4px;
@@ -85,12 +85,36 @@ nav {/*navbar styles with dropdown menu*/
 }
 
 main {
-    background-color: steelblue;
     /*make main element take up surplus space to push the footer down*/
     flex: 1 0 auto;
     margin-top: 47px;/*offset margin to the top relative to header height*/
 }
 
+/*hero section */
+#hero-banner {
+    width: 100%;
+    height: 600px;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {/*overlay text styles for hero banner*/
+    background-color: rgba(235, 156, 99, 0.72);
+    font-size: 135%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text h2, #cover-text h3, #cover-text h4 {
+    color: #ffffff;
+}
+
+
+/*footer icons*/
 #social-media {
     text-align: center;
     padding: 20px 0;
@@ -136,6 +160,11 @@ main {
 
     main {
         margin-top: 75px;/*offset extra space taken by header to push main element down*/
+    }
+
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 
 }
