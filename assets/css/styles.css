@@ -28,6 +28,9 @@ header {
     z-index: 50;
     width: 100%;
     box-shadow: 0 3px 3px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -55,11 +58,24 @@ h1 {
 nav {/*navbar styles with dropdown menu*/
     position: absolute;
     left: 0;
+    top: 100%;
     padding: 0 1rem;
     background-color: #fffffc;
     width: 100vh; /*navbar extends to full width of viewport*/
     box-shadow: inherit; /*inherit properties values from the header*/
     display: none; /*hide display untill user clicks on the hamburger button*/
+}
+
+#nav-toggle:checked ~ nav { /*target sibling of checkbox and trigger block display when button is checked*/
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 .active {
@@ -70,6 +86,7 @@ main {
     background-color: steelblue;
     /*make main element take up surplus space to push the footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;/*offset margin to the top relative to header height*/
 }
 
 footer {
