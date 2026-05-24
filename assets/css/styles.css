@@ -36,7 +36,7 @@ header a {
 }
 
 h1 {
-    font-family: "oswald" sans-serif;
+    font-family: "oswald", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252524;
@@ -50,6 +50,14 @@ h1 {
 
 #menu > li {
     margin-bottom: 1em;
+}
+
+nav {/*navbar styles with dropdown menu*/
+    position: absolute;
+    left: 0;
+    padding: 1rem;
+    background-color: #fffffc;
+    width: 100vh; /*navbar extends to full width of viewport*/
 }
 
 .active {
