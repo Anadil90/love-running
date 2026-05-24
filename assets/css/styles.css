@@ -92,3 +92,27 @@ main {
 footer {
     background-color:bisque;
 }
+
+/*media query*/
+@media screen and (min-width:768px) { /*trigger styles when when viewport reaches tablet screen size*/
+    /*header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;/* box shadow is now no longer needed to be applied*/
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding: 0 10px;
+    }
+
+    .nav-toggle-label {
+        display: none; /*hide toggler*/
+    }
+}
