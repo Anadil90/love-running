@@ -125,4 +125,14 @@ footer {
     main {
         margin-top: 75px;/*offset extra space taken by header to push main element down*/
     }
+
+}
+
+@media screen and (min-width:992px) {/*trigger styles when viewport reaches laptop screen size*/
+    /*target nav links when they are hovered and apply styles*/
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;/*replicate styles that are applied to the active class*/
+        cursor: pointer;
+    }
+
 }
