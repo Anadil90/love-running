@@ -55,9 +55,11 @@ h1 {
 nav {/*navbar styles with dropdown menu*/
     position: absolute;
     left: 0;
-    padding: 1rem;
+    padding: 0 1rem;
     background-color: #fffffc;
     width: 100vh; /*navbar extends to full width of viewport*/
+    box-shadow: inherit; /*inherit properties values from the header*/
+    display: none; /*hide display untill user clicks on the hamburger button*/
 }
 
 .active {
