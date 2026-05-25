@@ -207,13 +207,56 @@ hr {
         right: 50px;
     }
 
+    #benefits-physical, #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical > div, 
+    #benefits-mental > div {
+        width: 75%;
+    }
+
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
 }
 
-@media screen and (min-width:992px) {/*trigger styles when viewport reaches laptop screen size*/
+@media screen and (min-width:992px) {/*trigger styles when viewport reaches laptop and desktop screen size*/
     /*target nav links when they are hovered and apply styles*/
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;/*replicate styles that are applied to the active class*/
         cursor: pointer;
     }
 
+}
+
+@media screen and (min-width:1200px) {/*trigger these styles on large screen sizes (1200px and above)*/
+    /*reasons section*/
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div {
+        flex: 1;/*flex to fill up surplus space*/
+    }
+
+    #benefits-image {
+        order: 0; /*display image second*/
+    }
+
+    #benefits-mental {
+        order: 1; /*first priority for display. shows up first*/
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
 }
