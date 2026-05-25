@@ -194,6 +194,24 @@ hr {
     color: #fafafa;
 }
 
+/*gallery page*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;/*remove space on top and bottom of photos*/
+}
+
+/*media query for phones with screen width above 576px*/
+@media screen and (min-width:576px) {
+    #photos {
+        column-count: 2;/*make images divs display in two columns*/
+        column-gap: 0;/*no gap between columns*/
+    }
+}
+
 /*media query*/
 @media screen and (min-width:768px) { /*trigger styles when when viewport reaches tablet screen size*/
     /*header*/
@@ -247,6 +265,11 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /*photos section*/
+    #photos {/*display photos in 3 columns for tablet screen*/
+        column-count: 3;
+    }
 }
 
 @media screen and (min-width:992px) {/*trigger styles when viewport reaches laptop and desktop screen size*/
@@ -254,6 +277,11 @@ hr {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;/*replicate styles that are applied to the active class*/
         cursor: pointer;
+    }
+
+    /*photos section*/
+    #photos {
+        column-count: 4;
     }
 
 }
