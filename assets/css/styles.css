@@ -90,6 +90,10 @@ main {
     margin-top: 47px;/*offset margin to the top relative to header height*/
 }
 
+.hidden-heading {/*utility class to hide heading when needed*/
+    display: none;
+}
+
 /*hero section */
 #hero-banner {
     width: 100%;
@@ -167,6 +171,27 @@ hr {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+#times {
+    background: url("../images/tanya-barrow-9ncdJzaGM9g-unsplash.jpg") no-repeat center / cover;
+    /*responsive display of image without media query*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6); /*transparent black overlay color to contrast text*/
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;/*divs will not wrap on screens less than 400px. Divs will expand to fill space on row*/
+    flex-grow: 1;
+    border: 2px solid #ffffff;/*creates a grid of meetup times div over background*/
+}
+
+#times h3 {/*override color property from heading group selector*/
+    color: #fafafa;
 }
 
 /*media query*/
